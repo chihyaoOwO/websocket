@@ -21,7 +21,6 @@ WebSocket 事件分為
 因為WebSocket是類似使用者端伺服器端的形式(採用ws協定)，那麼這裡的WebSocketServer其實就相當於一個ws協定的Controller。
 
 @ ServerEndpoint 註解是一個類層次的註解，它的功能主要是將目前的類定義成一個websocket伺服器端，
-
 註解的值將被用於監聽使用者連線的終端存取URL地址，使用者端可以通過這個URL來連線到WebSocket伺服器端。
 
 新建一個CopyOnWriteArraySet(或者ConcurrentHashMap) webSocketServers 用於接收當前user session的WebSocket，方便傳遞之間對user進行推播訊息。
