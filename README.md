@@ -12,7 +12,7 @@ WebSocket 事件分為
 
 @OnOpen	  連接建立時觸發
 
-@OnMessage	客戶端接收服務端資料時觸發
+@OnMessage	服務端接收客戶端資料時觸發
 
 @OnError	通信發生錯誤時觸發
 
