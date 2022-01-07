@@ -7,10 +7,10 @@
 WebSocketConfig 為啟用配置
 
 WebSocket 事件分為
-open	連接建立時觸發
-message	客戶端接收服務端資料時觸發
-error	通信發生錯誤時觸發
-close	連接關閉時觸發
+@OnOpen	  連接建立時觸發
+@OnMessage	客戶端接收服務端資料時觸發
+@OnError	通信發生錯誤時觸發
+@OnClose	連接關閉時觸發
 
 因為WebSocket是類似使用者端伺服器端的形式(採用ws協定)，那麼這裡的WebSocketServer其實就相當於一個ws協定的Controller。
 @ ServerEndpoint 註解是一個類層次的註解，它的功能主要是將目前的類定義成一個websocket伺服器端，
